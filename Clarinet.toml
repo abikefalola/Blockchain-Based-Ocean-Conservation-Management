@@ -1,0 +1,29 @@
+[project]
+name = 'Blockchain-Based-Ocean-Conservation-Management'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.fishing-activities]
+path = 'contracts/fishing-activities.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.marine-area-verification]
+path = 'contracts/marine-area-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.species-monitoring]
+path = 'contracts/species-monitoring.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
